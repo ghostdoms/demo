@@ -1,0 +1,160 @@
+html,
+body {
+    font-family: "Microsoft Yahei", 微软雅黑, arial, 宋体, sans-serif;
+    background: #fff;
+}
+
+.wrap header {
+    width: 100%;
+    background: #1b1f21;
+}
+
+.wrap header h3 {
+    padding: 14px 0 14px 150px;
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    background-color: #1b1f21;
+}
+
+.wrap header h3 img {
+    position: absolute;
+    left: 108px;
+    top: 20px;
+}
+
+.wrap section .img img {
+    width: 100%;
+}
+
+.wrap section .form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 325px;
+    height: auto;
+    min-height: 120px;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.wrap section .form div {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 21px;
+}
+
+.wrap section .form div label {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    border-right: 1px solid #e1e1e1;
+    float: left;
+    background: url('../images/user.png') no-repeat center;
+}
+
+.wrap section .form div label.psd {
+    background: url('../images/password.png') no-repeat center;
+}
+
+.wrap section .form div input[type=submit] {
+    width: 100%;
+    height: 100%;
+    background: #3da1ce;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-family: "Microsoft Yahei", 微软雅黑, arial, 宋体, sans-serif;
+}
+
+.wrap section .form div input[type=text],
+.wrap section .form div input[type=password] {
+    display: inline-block;
+    width: 272px;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-indent: 20px;
+    font-size: 16px;
+    color: #666;
+    font-family: "Microsoft Yahei", 微软雅黑, arial, 宋体, sans-serif;
+}
+
+.wrap .changepsd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 430px;
+    border: 1px solid #e2e1e0;
+    transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: none;
+}
+
+.wrap .changepsd h4 {
+    padding: 13px 20px 13px 30px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #e2e1e0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.wrap .changepsd h4 span {
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.wrap .changepsd div {
+    padding: 12px 30px;
+}
+
+.wrap .changepsd div:last-child {
+    text-align: center;
+}
+
+.wrap .changepsd div:first-child {
+    padding-top: 30px;
+}
+
+.wrap .changepsd div label {
+    font-size: 14px;
+    color: #434343;
+}
+
+.wrap .changepsd div label.newpsd {
+    padding-left: 28px;
+}
+
+.wrap .changepsd div input[type=password] {
+    width: 276px;
+    height: 28px;
+    border: 1px solid #e2e1e0;
+    outline: none;
+}
+
+.wrap .changepsd div input[type=submit] {
+    padding: 0 25px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #3da1ce;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}

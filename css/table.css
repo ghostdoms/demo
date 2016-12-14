@@ -1,0 +1,550 @@
+html,
+body {
+    background: #fff;
+}
+
+
+/* leftnav */
+
+.leftnav {
+    width: 230px;
+    float: left;
+    padding: 20px 0;
+    min-height: 600px;
+    border-bottom: solid 1px #e1e1e1;
+    border-right: solid 1px #e1e1e1;
+    position: relative;
+}
+
+.leftnav ul.one span {
+    padding-left: 22px;
+}
+
+.leftnav ul.two span {
+    padding-left: 64px;
+}
+
+.leftnav ul.three li {
+    padding-left: 97px;
+}
+
+.leftnav ul.two,
+.leftnav ul.three {
+    display: none;
+}
+
+.leftnav li {
+    line-height: 36px;
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+}
+
+.leftnav li .server-info {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 20px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: solid 1px #e1e1e1;
+    padding: 0 10px;
+    position: relative;
+    display: none;
+}
+
+.leftnav li .server-info:hover {
+    background: #edf7fc;
+}
+
+.leftnav li .server-info:before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 10px;
+    border: solid 6px transparent;
+    border-right: solid 10px #e1e1e1;
+}
+
+.leftnav li .server-info:after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    border: solid 4px transparent;
+    border-right: solid 8px #fff;
+}
+
+.leftnav span {
+    display: block;
+    height: 100%;
+}
+
+.leftnav ul.three li:hover,
+.leftnav span:hover {
+    background: #edf7fc;
+}
+
+.leftnav ul.three li.on {
+    background: #edf7fc;
+    color: #1b99d6;
+}
+
+.leftnav li span.ischild:before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    border: solid 5px transparent;
+    border-left: solid 8px #9a989a;
+}
+
+.leftnav li.on>span.ischild:before {
+    border: solid 5px transparent;
+    border-top: solid 8px #9a989a;
+    position: relative;
+    top: 3px;
+}
+
+.leftnav .dragbox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background: transparent;
+}
+
+.leftnav .dragbox:hover {
+    cursor: col-resize;
+}
+
+.main {
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.main .tablebox {
+    display: none;
+}
+
+.main .tablebox .main-title {
+    background: #f9f9f9;
+    padding-left: 28px;
+    line-height: 38px;
+    font-weight: bolder;
+    color: #666;
+    font-size: 16px;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.main .tablebox .main-title i {
+    font-style: normal;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #666;
+    border-right: 2px solid #666;
+    font-size: 16px;
+    display: inline-block;
+    transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    margin: 0 5px;
+}
+
+.main .tablebox .main-content {
+    padding: 19px 27px;
+}
+
+.main-content .more {
+    text-align: center;
+    margin: 20px 0;
+    width: 60%;
+}
+
+.main-content .more a {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background: #f4f4f4;
+    font-size: 12px;
+    color: #999;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+}
+
+.main-content .more:hover a {
+    color: #3da1ce;
+    background: #e1f1f7;
+}
+
+.main-content .tab-h {
+    font-size: 14px;
+    color: #444;
+    margin-top: 21px;
+}
+
+.main-content .tab-h:first-child {
+    margin-top: 0;
+}
+
+.main-content .tab-h p {
+    padding: 0 0 12px 0;
+    margin-top: -8px;
+}
+
+.main-content .tab-h p span {
+    margin-right: 50px;
+}
+
+.main-content .tab-h div {
+    display: inline-block;
+    line-height: 30px;
+    background: #f4f4f4;
+    padding: 0 15px;
+    min-width: 79px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main-content .tab-h i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    font-style: normal;
+    text-align: center;
+    font-size: 8px;
+    color: #a2a2a2;
+    line-height: 14px;
+    background: #e1f1f7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    cursor: pointer;
+}
+
+.main-content .tab-h i:hover + p {
+    display: inline-block;
+}
+
+.main-content .tab-h p.tooltop {
+    padding: 5px 10px;
+    background: #e1f1f7;
+    color: #3da1ce;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+}
+
+.main-content .tab-h p.tooltop:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: -webkit-translateY(-50%);
+    -moz-transform: -moz-translateY(-50%);
+    -o-transform: -o-translateY(-50%);
+    -ms-transform: -ms-translateY(-50%);
+    border: solid 4px transparent;
+    border-right: solid 8px #f4f4f4;
+}
+
+.main-content .tab-h div:last-child {
+    margin-bottom: 20px;
+}
+
+.main table {
+    width: 100%;
+    border-left: solid 1px #e1e1e1;
+    border-top: solid 1px #e1e1e1;
+    table-layout: fixed
+}
+
+.main table tbody td {
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main table.database th:nth-child(1) {
+    width: 30%;
+}
+
+.main table.sketch th:nth-child(1) {
+    width: 20%;
+}
+
+.main table.sketch th:nth-child(2) {
+    width: 50%;
+}
+
+.main table.sketch th:nth-child(3) {
+    width: 15%;
+}
+
+.main table.sketch th:nth-child(4) {
+    width: 15%;
+}
+
+.main table.partition th:nth-child(1) {
+    width: 25%;
+}
+
+.main table.partition th:nth-child(2) {
+    width: 15%;
+}
+
+.main table.part-list {
+    width: 60%;
+}
+
+// .main table.sample {
+//     margin-top: 20px;
+// }
+.main table.sample th {
+    width: 14.285%;
+}
+
+.main table th,
+.main table td {
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+.main table td {
+    padding: 0 20px;
+}
+
+.main table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+/*数据源样式*/
+
+.leftnav .nav-h {
+    min-width: 600px;
+    margin-bottom: 20px;
+}
+
+.leftnav .nav-h .create-server {
+    display: inline-block;
+    line-height: 30px;
+    background: #3da1ce;
+    color: #fff;
+    padding: 0 15px;
+    text-align: center;
+    margin-left: 45px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    position: relative;
+}
+
+.leftnav .nav-h .create-server ul {
+    position: absolute;
+    left: 114%;
+    top: 0;
+    text-align: left;
+    background: #fff;
+    border-radius: 4px;
+    border: solid 1px #e1e1e1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: none;
+}
+
+.leftnav .nav-h .create-server ul:before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 10px;
+    border: solid 6px transparent;
+    border-right: solid 10px #e1e1e1;
+}
+
+.leftnav .nav-h .create-server ul:after {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 12px;
+    border: solid 4px transparent;
+    border-right: solid 8px #fff;
+}
+
+.leftnav .nav-h .create-server ul li {
+    padding: 0 30px 0 10px;
+}
+
+.leftnav .nav-h .create-server ul li:hover {
+    background: #edf7fc;
+}
+
+.leftnav .nav-h .create-server em {
+    font-weight: bolder;
+}
+
+.leftnav .nav-h i {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    font-style: normal;
+    text-align: center;
+    font-size: 8px;
+    color: #a2a2a2;
+    line-height: 14px;
+    background: #e1f1f7;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    cursor: pointer;
+}
+
+.leftnav .nav-h i:hover + p {
+    display: inline-block;
+}
+
+.leftnav .nav-h p.tooltop {
+    padding: 5px 10px;
+    background: #e1f1f7;
+    color: #3da1ce;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+}
+
+.leftnav .nav-h p.tooltop:before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: -webkit-translateY(-50%);
+    -moz-transform: -moz-translateY(-50%);
+    -o-transform: -o-translateY(-50%);
+    -ms-transform: -ms-translateY(-50%);
+    border: solid 4px transparent;
+    border-right: solid 8px #f4f4f4;
+}
+
+.mark-box {
+    width: 627px;
+    margin: 70px auto 0;
+    border: solid 1px #e1e1e1;
+}
+
+.mark-box .mark-title {
+    background: #fbfbfb;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.mark-box .mark-title h3 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #656666;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.mark-box .mark-title .close {
+    float: right;
+    line-height: 40px;
+    margin-right: 30px;
+    font-size: 22px;
+    color: #656666;
+    cursor: pointer;
+}
+
+.mark-box .mark-content {
+    padding: 30px;
+}
+
+.mark-box table tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+.mark-box table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.mark-box table td i {
+    float: right;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.mark-box table td i:hover {
+    color: #3ca0cd;
+}
+
+.baocun {
+    text-align: right;
+    padding: 0 30px 30px 0;
+}
+
+.baocun input {
+    outline: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: none;
+    background: #3da1ce;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei", 微软雅黑, arial, 宋体, sans-serif;
+}
+
+.mark-content label {
+    display: block;
+    text-align: right;
+    margin-bottom: 17px;
+}
+
+.mark-content label span {
+    color: #434343;
+    font-size: 14px;
+}
+
+.mark-content label input {
+    width: 88%;
+    height: 30px;
+    border: solid 1px #e1e1e1;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding-left: 10px;
+    color: #434343;
+    outline: none;
+}

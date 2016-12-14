@@ -1,0 +1,245 @@
+html,
+body {
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* header */
+
+.wrap .loginhead {
+    background: #252525;
+}
+
+.wrap .loginhead h3 {
+    padding: 9px 0 9px 132px;
+    position: relative;
+    font-size: 26px;
+    background: #252525;
+    float: left;
+}
+
+.wrap .loginhead h3 a {
+    padding-left: 20px;
+    color: #fff;
+}
+
+.wrap .loginhead h3 img {
+    position: absolute;
+    left: 100px;
+    top: 12px;
+}
+
+.wrap .loginhead span {
+    display: inherit;
+    float: right;
+    padding: 15px 0;
+    margin-right: 78px;
+}
+.wrap .loginhead nav li a{
+    padding: 16px 28px;
+    color: #fff;
+}
+.wrap .loginhead nav li.on a,
+.wrap .loginhead nav li:hover a{
+    background: #454545;
+    color: #fff;
+}
+.wrap .loginhead span b {
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+
+.wrap .loginhead span i {
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.wrap .loginhead span:before {
+    content: url(../images/user-icon.png);
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 15px;
+}
+
+.wrap .loginhead span b {
+    cursor: pointer;
+}
+
+.wrap .loginhead span b:after {
+    content: '';
+    display: inline-block;
+    border-top: solid 8px #fff;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    margin-left: 10px;
+}
+
+.wrap .loginhead span:hover b:after {
+    border-top: solid 8px #3da1ce;
+}
+
+.wrap .loginhead .index-option {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    top: 38px;
+    left: 0;
+    box-shadow: 0 2px 2px #e1e1e1;
+    -webkit-box-shadow: 0 2px 2px #e1e1e1;
+    display: none;
+}
+
+.wrap .loginhead .index-option ul li {
+    line-height: 30px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.wrap .loginhead .index-option ul li:hover {
+    background: #ebf8fd;
+}
+
+.wrap .loginhead .index-option ul li a:hover {
+    color: #666;
+}
+
+.infobox-tit {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.infobox-tit h3 {
+    font-size: 16px;
+    color: #666;
+    padding: 10px 100px;
+}
+
+.wrap .form {
+    margin-left: 100px;
+}
+
+.wrap .form div {
+    margin-bottom: 20px;
+}
+
+.wrap .form div:first-child {
+    margin-top: 20px;
+}
+
+.wrap .form div label {
+    font-size: 14px;
+    color: #444;
+}
+
+.wrap .form div label input {
+    border: 1px solid #e1e1e1;
+    height: 30px;
+    width: 400px;
+    color: #999;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    text-indent: 18px;
+    outline: none;
+}
+
+.wrap .form div label input[type=passwoed] {
+    color: #444;
+}
+
+.wrap .form div label span {
+    color: #999;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.wrap .form div label span:hover {
+    color: #3daece;
+    cursor: pointer;
+}
+
+.wrap .mark {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #666;
+    display: none;
+}
+
+.wrap .mark .markbox {
+    width: 436px;
+    height: 297px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 12%;
+}
+
+.wrap .markbox h4 {
+    padding: 13px 20px 13px 30px;
+    background: #fbfbfb;
+    border-bottom: 1px solid #e2e1e0;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.wrap .markbox h4 span {
+    display: inline-block;
+    float: right;
+    font-size: 30px;
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.wrap .changebox div {
+    padding: 10px 30px;
+}
+
+.wrap .changebox div:last-child {
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+
+.wrap .changebox div:first-child {
+    padding-top: 30px;
+}
+
+.wrap .changebox div label {
+    font-size: 14px;
+    color: #434343;
+}
+
+.wrap .changebox div label.psd {
+    padding-left: 14px;
+}
+
+.wrap .changebox div label.newpsd {
+    padding-left: 28px;
+}
+
+.wrap .changebox div input[type=password] {
+    width: 272px;
+    height: 28px;
+    border: 1px solid #e2e1e0;
+    outline: none;
+}
+
+.wrap .changebox div input[type=submit] {
+    padding: 0 32px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background: #3da1ce;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}

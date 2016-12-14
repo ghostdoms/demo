@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>机器管理-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resource.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li class="on"><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down on"><a href="machine.html">机器管理</a></li>
+                <li class="no-down"><a href="system.html">系统监控</a></li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">机器管理</a></li>
+            </ul>
+        </nav>
+        <section class="machine">
+            <div class="machine-tit clearfix">
+                <div class="select-box clearfix">
+                    <span>管理状态:</span>
+                    <div class="select">
+                        <span>全部</span>
+                        <div class="option">
+                            <ul>
+                                <li>全部</li>
+                                <li>注册</li>
+                                <li>在线</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-box clearfix">
+                    <span>运行状态:</span>
+                    <div class="select">
+                        <span>全部</span>
+                        <div class="option">
+                            <ul>
+                                <li>全部</li>
+                                <li>运行中</li>
+                                <li>未运行</li>
+                                <li>未响应</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="new">
+                    <a href="add_machine.html"><em>+</em>添&nbsp;&nbsp;加</a>
+                </div>
+            </div>
+            <table cellspacing="0" cellpadding="0" border="0" class="machine-tab">
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>IP地址</th>
+                        <th>端口</th>
+                        <th>角色名称</th>
+                        <th>管理状态</th>
+                        <th>运行状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>注册</td>
+                        <td>未运行</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>维护中</td>
+                        <td>未运行</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>离线</td>
+                        <td>未响应</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>注册</td>
+                        <td>错误</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>注册</td>
+                        <td>未运行</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="blue">upload1</span>
+                            <div class="detail">
+                                <div class="detail-tit clearfix">
+                                    <h3>upload1</h3>
+                                    <div class="close">×</div>
+                                </div>
+                                <table  cellspacing="0" cellpadding="0" border="0" class="detail-tab">
+                                    <thead>
+                                        <tr>
+                                            <th>名称</th>
+                                            <th>角色</th>
+                                            <th>IP地址</th>
+                                            <th>运行任务数</th>
+                                            <th>资源占用情况</th>
+                                            <th>上传心跳</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>upload1</td>
+                                            <td>上传器</td>
+                                            <td>24.15.532</td>
+                                            <td>20</td>
+                                            <td>CPU：<span>80%</span>，内存：<span>4.5/8GB</span>, 硬盘：<span>400GB/2TB</span></td>
+                                            <td>正常（最近汇报6-7 18：09：11）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td>24.15.532</td>
+                        <td>3306</td>
+                        <td>上传器</td>
+                        <td>注册</td>
+                        <td>未运行</td>
+                        <td>
+                            <span class="online">上线</span>
+                            <span class="maintenance">维护</span>
+                            <span class="delete">删除</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="mark">
+            <div class="iscancel">
+                <p>确定删除任务</p>
+                <div class="clearfix">
+                    <span class="true trues">删除</span>
+                    <span class="cancel cancels">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!--<script type="text/javascript" src="js/table.js"></script> -->
+        <script type="text/javascript">
+        $('.select').on('click', function(e) {
+            e.stopPropagation();
+            $(this).find('.option').toggle().find('li').on('click', function(e) {
+                e.stopPropagation();
+                $(this).parents('.option').hide().prev().text($(this).text());
+            });
+            $(this).siblings().find('.option').hide();
+        })
+
+        $(document).not($('.select')).on('click', function(e) {
+            e.stopPropagation();
+            $('.option').hide();
+        });
+
+        $('.machine-tab').find('td:last-child').find('span').on('click', function(){
+            $('.mark').show();
+        });
+
+        $('.blue').on('click', function(){
+            $(this).next().show();
+            $(this).parents('tr').siblings().find('.detail').hide();
+            $('.detail').find('.close').on('click', function(){
+                $(this).parents('.detail').hide();
+            })
+        })
+        </script>
+</body>
+
+</html>

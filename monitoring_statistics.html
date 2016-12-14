@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>监控统计-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/monitoring_statistics.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li class="on"><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="on no-down"><a href="monitoring_statistics.html">监控统计</a></li>
+                <li>
+                    <a href="data_source.html">数据管理</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="data_source.html">数据源管理</a></li>
+                            <li><a href="table.html">数据仓库管理</a></li>
+                            <li><a href="create_hive.html">新建数据表</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="task_manager.html">任务配置</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="task_manager.html">任务管理</a></li>
+                            <li><a href="task_new.html">新建任务</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">监控统计</a></li>
+            </ul>
+        </nav>
+        <section class="pageone clearfix">
+            <div class="l-l">
+                <!--table-->
+                <div class="item">
+                    <h3>累计上传统计</h3>
+                    <div class="table-box">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>工作空间名</th>
+                                    <th>任务数（个）</th>
+                                    <th>数据量（G）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="upload">
+                                <tr class="uploads">
+                                    <tr>
+                                        <td>---</td>
+                                        <td>---</td>
+                                        <td>---</td>
+                                    </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--table end-->
+                <!--table-->
+                <div class="item">
+                    <h3>数据库统计</h3>
+                    <div class="table-box">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>工作空间名</th>
+                                    <th>数据库（个）</th>
+                                    <th>数据表（个）</th>
+                                </tr>
+                            </thead>
+                            <tbody class="sql">
+                                <tr class="sqls">
+                                    <td>---</td>
+                                    <td>---</td>
+                                    <td>---</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--table end-->
+            </div>
+            <div class="l-r">
+                <!--table-->
+                <div class="item">
+                    <h3>近期数据上传情况</h3>
+                    <div class="item-select">
+                        <h4 class="taskdom1">工作空间1</h4>
+                        <ul class="timedateone">
+                            <li class="on">12小时</li>
+                            <li>24小时</li>
+                            <li>7天</li>
+                            <li>15天</li>
+                            <li>30天</li>
+                        </ul>
+                    </div>
+                    <div class="table-box">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody class="taskone">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--table end-->
+                <!--table-->
+                <div class="item">
+                    <div class="item-select">
+                        <h4 class="taskdom2">工作空间2</h4>
+                        <ul class="timedatetwo">
+                            <li class="on">12小时</li>
+                            <li>24小时</li>
+                            <li>7天</li>
+                            <li>15天</li>
+                            <li>30天</li>
+                        </ul>
+                    </div>
+                    <div class="table-box">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody class="tasktwo">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--table end-->
+            </div>
+        </section>
+        <div class="mark">
+            <div class="iscancel">
+                <h2>确定消除报警？</h2>
+                <div>
+                    <span class="true">确定</span>
+                    <span class="cancel">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+        <div class="log">
+            <div class="logshow">
+                <div class="close">×</div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/monitoring_statistics.js"></script>
+</body>
+
+</html>

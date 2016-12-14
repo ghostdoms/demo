@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加角色-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add_part.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li class="on"><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="permission.html">用户列表</a></li>
+                <li class="on no-down"><a href="part_list.html">角色列表</a></li>
+                <li class="no-down"><a href="operate_log.html">操作日志</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <span>添加新角色</span>
+            <div class="part">
+                <span>角色名：</span>
+                <input type="text" placeholder="数据分析师">
+            </div>
+            <div class="conf clearfix">
+                <span>配置权限</span>
+                <b>
+                    <b>选择模板：</b>
+                <div>
+                    <p>无</p>
+                    <ul>
+                        <li>五矿-数据分析师</li>
+                        <li>管理员</li>
+                        <li>数据分析师</li>
+                    </ul>
+                </div>
+                </b>
+                <em>权限模板</em>
+            </div>
+            <div class="mb clearfix">
+                <div class="main-c">
+                    <h5>页面与功能权限</h5>
+                    <ul class="fir">
+                        <li class="drop-d"><i class="on"></i>标记模块</li>
+                        <ul class="sec">
+                            <li class="drop-d"><i></i>监控统计</li>
+                            <ul class="thi">
+                                <li class="on"><i></i>统计页</li>
+                                <li><i></i>详情页</li>
+                            </ul>
+                            <li class="drop-r"><i></i>任务管理</li>
+                            <li class="drop-r"><i></i>数据表管理</li>
+                        </ul>
+                        <li class="drop-r"><i></i>分析模块</li>
+                    </ul>
+                </div>
+                <div class="main-r">
+                    <h5>数据权限</h5>
+                    <ul class="fir">
+                        <li class="drop-r">
+                            <i></i>标记模块
+                            <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em>
+                        </li>
+                        <ul class="sec">
+                            <li>
+                                <i></i>监控统计
+                                <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em>
+                            </li>
+                            <ul class="thi">
+                                <li><i></i>统计页
+                                    <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                                <li><i></i>详情页
+                                    <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                            </ul>
+                            <li><i></i>任务管理
+                                <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                            <li><i></i>数据表管理
+                                <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                        </ul>
+                        <li class="on drop-d"><i class="on"></i>分析模块
+                            <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b class="on"></b><span>删除</span></em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="saves">
+                <span>退出</span>
+                <span>保存</span>
+            </div>
+        </section>
+        <!--  <div class="templet">
+           <div class="main">
+               <h4>权限模板</h4>
+               <div class="main-d clearfix">
+                   <div class="main-l">
+                       <ul>
+                           <li><i>+</i>新增模板</li>
+                           <li>管理员</li>
+                           <li>数据分析师</li>
+                           <li>数据维护师</li>
+                           <li>模板名称</li>
+                       </ul>
+                   </div>
+                   <div class="main-c">
+                       <h5>页面与功能权限</h5>
+                       <ul class="fir">
+                           <li class="drop-d"><i class="on"></i>标记模块</li>
+                           <ul class="sec">
+                               <li class="drop-d"><i></i>监控统计</li>
+                               <ul class="thi">
+                                   <li class="on"><i></i>统计页</li>
+                                   <li><i></i>详情页</li>
+                               </ul>
+                               <li class="drop-r"><i></i>任务管理</li>
+                               <li class="drop-r"><i></i>数据表管理</li>
+                           </ul>
+                           <li class="drop-r"><i></i>分析模块</li>
+                       </ul>
+                   </div>
+                   <div class="main-r">
+                       <h5>数据权限</h5>
+                       <ul class="fir">
+                           <li class="drop-r">
+                               <i></i>标记模块
+                               <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em>
+                           </li>
+                           <ul class="sec">
+                               <li>
+                                   <i></i>监控统计
+                                   <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em>
+                               </li>
+                               <ul class="thi">
+                                   <li><i></i>统计页
+                                       <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                                   <li><i></i>详情页
+                                       <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                               </ul>
+                               <li><i></i>任务管理
+                                   <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                               <li><i></i>数据表管理
+                                   <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b></b><span>删除</span></em></li>
+                           </ul>
+                           <li class="on drop-d"><i class="on"></i>分析模块
+                               <em><b></b><span>读</span>
+                               <b></b><span>写</span>
+                               <b class="on"></b><span>删除</span></em></li>
+                       </ul>
+                   </div>
+                   <span class="save">保存</span>
+               </div>
+           </div>
+       </div> -->
+        <div class="templet">
+            <div class="main">
+                <h4>权限模板</h4>
+                <div class="main-d clearfix">
+                    <div class="main-l">
+                        <ul>
+                            <li><i>+</i>新增模板</li>
+                            <li>管理员</li>
+                            <li>数据分析师</li>
+                            <li>数据维护师</li>
+                            <li>模板名称</li>
+                        </ul>
+                    </div>
+                    <div class="main-c">
+                        <h5>页面与功能权限</h5>
+                        <ul class="fir">
+                            <li class="drop-d"><i class="on"></i>标记模块</li>
+                            <ul class="sec">
+                                <li class="drop-d"><i></i>监控统计</li>
+                                <ul class="thi">
+                                    <li class="on"><i></i>统计页</li>
+                                    <li><i></i>详情页</li>
+                                </ul>
+                                <li class="drop-r"><i></i>任务管理</li>
+                                <li class="drop-r"><i></i>数据表管理</li>
+                            </ul>
+                            <li class="drop-r"><i></i>分析模块</li>
+                        </ul>
+                    </div>
+                    <div class="main-r">
+                        <h5>数据权限</h5>
+                        <ul class="fir">
+                            <li class="drop-r">
+                                <i></i>标记模块
+                                <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em>
+                            </li>
+                            <ul class="sec">
+                                <li>
+                                    <i></i>监控统计
+                                    <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em>
+                                </li>
+                                <ul class="thi">
+                                    <li><i></i>统计页
+                                        <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em></li>
+                                    <li><i></i>详情页
+                                        <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em></li>
+                                </ul>
+                                <li><i></i>任务管理
+                                    <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em></li>
+                                <li><i></i>数据表管理
+                                    <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b></b><span>删除</span></em></li>
+                            </ul>
+                            <li class="on drop-d"><i class="on"></i>分析模块
+                                <em><b></b><span>读</span>
+                                <b></b><span>写</span>
+                                <b class="on"></b><span>删除</span></em></li>
+                        </ul>
+                    </div>
+                    <span class="save">保存</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

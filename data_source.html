@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>数据源管理-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li class="on"><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="monitoring_statistics.html">监控统计</a></li>
+                <li class="on">
+                    <a href="data_source.html">数据管理</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="data_source.html">数据源管理</a></li>
+                            <li><a href="table.html">数据仓库管理</a></li>
+                            <li><a href="create_hive.html">新建数据表</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="task_manager.html">任务配置</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="task_manager.html">任务管理</a></li>
+                            <li><a href="task_new.html">新建任务</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">监控统计</a></li>
+            </ul>
+        </nav>
+        <section class="clearfix">
+            <nav class="leftnav">
+                <div class="nav-h">
+                    <div class="create-server">
+                        <em>＋</em>添加服务器
+                        <ul>
+                            <li>mysql</li>
+                            <li>sqlserver</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </div>
+                    <i class="tooli">?</i>
+                    <p class="tooltop">数据网关数据后台内置，服务器数据直接连接数据库获取</p>
+                </div>
+                <ul class="one">
+                    <li>
+                        <span class="ischild">工作空间1</span>
+                        <ul class="two">
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="ischild">工作空间1<div class="server-info">查看数据库信息</div></span>
+                        <ul class="two">
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="ischild">工作空间1</span>
+                        <ul class="two">
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="ischild">数据库1</span>
+                                <ul class="three">
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                    <li>bhk-person</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="dragbox"></div>
+            </nav>
+            <div class="main">
+                <!--tablebox start-->
+                <div class="tablebox" style="display: block">
+                    <div class="main-title">
+                        <span>机械维修数据库服务器</span>
+                    </div>
+                    <div class="main-content">
+                        <table class="database" cellspacing="0" cellpadding="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th>数据库名</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--tablebox end-->
+                <!--tablebox start-->
+                <div class="tablebox">
+                    <div class="main-title">
+                        <span>机械维修数据库服务器</span>
+                        <i></i>
+                        <span>数据库1</span>
+                    </div>
+                    <div class="main-content">
+                        <table cellspacing="0" class="database" cellpadding="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th>表名</th>
+                                    <th>备注</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                                <tr>
+                                    <td>数据库1</td>
+                                    <td>描述：gafdhiaguid gafdhiaguidgafdhiaguid</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--tablebox end-->
+                <!--tablebox start-->
+                <div class="tablebox">
+                    <div class="main-title">
+                        <span>工作空间1</span>
+                        <i></i>
+                        <span>default</span>
+                        <i></i>
+                        <span>数据库1</span>
+                    </div>
+                    <div class="main-content">
+                        <div class="tab-h">
+                            <div>概述</div>
+                            <p>
+                                表名：<span>bhk-company</span> 创建日期：
+                                <span>2016-11-09 11:19</span>
+                            </p>
+                            <div>列</div>
+                        </div>
+                        <table cellspacing="0" class="sketch" cellpadding="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th>字段名称</th>
+                                    <th>字段说明</th>
+                                    <th>字段类型</th>
+                                    <th>是否为空</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td></td>
+                                    <td>int</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>city</td>
+                                    <td></td>
+                                    <td>int</td>
+                                    <td>是</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td></td>
+                                    <td>string</td>
+                                    <td>否</td>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td></td>
+                                    <td>int</td>
+                                    <td>是</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="tab-h">
+                            <div>样例数据</div>
+                            <i class="tooli">?</i>
+                            <p class="tooltop">只展示20条样例数据</p>
+                        </div>
+                        <table class="sample" cellspacing="0" cellpadding="0" border="0">
+                            <thead>
+                                <tr>
+                                    <th>cid</th>
+                                    <th>name</th>
+                                    <th>official-website</th>
+                                    <th>first-industry</th>
+                                    <th>second-industry</th>
+                                    <th>featured-industry</th>
+                                    <th>street-address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>00000010c45866923368</td>
+                                    <td>描述：gafdhiaguid gafdhia描述：gafdhiaguid gafdhia</td>
+                                    <td></td>
+                                    <td>钢铁</td>
+                                    <td>通用设备制造</td>
+                                    <td>机械加工器具</td>
+                                    <td>江苏省常州武进 拷贝 3</td>
+                                </tr>
+                                <tr>
+                                    <td>00000010c45866923368</td>
+                                    <td>描述：gafdhiaguid gafdhia</td>
+                                    <td></td>
+                                    <td>钢铁</td>
+                                    <td>通用设备制造</td>
+                                    <td>机械加工器具</td>
+                                    <td>江苏省常州武进 拷贝 3</td>
+                                </tr>
+                                <tr>
+                                    <td>00000010c45866923368</td>
+                                    <td>描述：gafdhiaguid gafdhia</td>
+                                    <td></td>
+                                    <td>钢铁</td>
+                                    <td>通用设备制造</td>
+                                    <td>机械加工器具</td>
+                                    <td>江苏省常州武进 拷贝 3</td>
+                                </tr>
+                                <tr>
+                                    <td>00000010c45866923368</td>
+                                    <td>描述：gafdhiaguid gafdhia</td>
+                                    <td></td>
+                                    <td>钢铁</td>
+                                    <td>通用设备制造</td>
+                                    <td>机械加工器具</td>
+                                    <td>江苏省常州武进 拷贝 3</td>
+                                </tr>
+                                <tr>
+                                    <td>00000010c45866923368</td>
+                                    <td>描述：gafdhiaguid gafdhia</td>
+                                    <td></td>
+                                    <td>钢铁</td>
+                                    <td>通用设备制造</td>
+                                    <td>机械加工器具</td>
+                                    <td>江苏省常州武进 拷贝 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--tablebox end-->
+                <!--tablebox start-->
+                <div class="tablebox">
+                    <div class="mark-box">
+                        <div class="mark-title clearfix">
+                            <h3>机械维修数据服务器-连接信息</h3>
+                            <div class="close">×</div>
+                        </div>
+                        <div class="mark-content">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td>服务器类型</td>
+                                        <td><span>MySql</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>链接名</td>
+                                        <td><span>192.168.1.133</span><i>修改</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>主机名或IP地址</td>
+                                        <td><span>192.168.1.133</span><i>修改</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>端口</td>
+                                        <td><span>3306</span><i>修改</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>用户名</td>
+                                        <td><span>dev</span><i>修改</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>密码</td>
+                                        <td><span>1234567</span><i>修改</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td>状态</td>
+                                        <td><span>已连接</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="baocun">
+                            <input type="button" value="保&nbsp;存">
+                        </div>
+                    </div>
+                </div>
+                <!--tablebox end-->
+                <!--tablebox start-->
+                <div class="tablebox">
+                    <div class="mark-box">
+                        <div class="mark-title clearfix">
+                            <h3>添加服务器mysql</h3>
+                            <div class="close">×</div>
+                        </div>
+                        <div class="mark-content">
+                            <label><span>连接名：</span>
+                                <input type="text" name="">
+                            </label>
+                            <label><span>IP地址：</span>
+                                <input type="text" name="">
+                            </label>
+                            <label><span>端口：</span>
+                                <input type="text" name="">
+                            </label>
+                            <label><span>用户名：</span>
+                                <input type="text" name="">
+                            </label>
+                            <label><span>密码：</span>
+                                <input type="text" name="">
+                            </label>
+                        </div>
+                        <div class="baocun">
+                            <input type="button" value="确&nbsp;定">
+                        </div>
+                    </div>
+                </div>
+                <!--tablebox end-->
+            </div>
+        </section>
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!-- <script type="text/javascript" src="js/table.js"></script> -->
+        <script type="text/javascript">
+        $('.one').find('li').on('click', function(e) {
+            e.stopPropagation();
+            if ($(this).find('.two').length > 0) {
+                $(this).toggleClass('on').find('.two').toggle();
+            }
+            $('.main').find('.tablebox').eq(0).show().siblings().hide();
+        });
+
+        $('.one').find('li').on('contextmenu', function(e) {
+            if (e.button == 2) {
+                $(this).find('.server-info').css('display', 'inline-block');
+                return false;
+            }
+        });
+
+        $('.server-info').on('click', function(e) {
+            e.stopPropagation();
+            console.log(111)
+            $('.main').find('.tablebox').eq(3).show().siblings().hide();
+        })
+
+        $(document).not($('.one').find('li')).on('click', function(e) {
+            e.stopPropagation();
+            $('.server-info').hide();
+        });
+
+        $('.two').find('li').on('click', function(e) {
+            e.stopPropagation();
+            if ($(this).find('.three').length > 0) {
+                $(this).toggleClass('on').find('.three').toggle();
+            }
+
+            $('.main').find('.tablebox').eq(1).show().siblings().hide();
+        });
+
+        $('.three').find('li').on('click', function(e) {
+            e.stopPropagation();
+            $(this).addClass('on').siblings().removeClass('on');
+            $('.main').find('.tablebox').eq(2).show().siblings().hide();
+        });
+
+
+
+        $('.create-server').on('click', function(e) {
+            e.stopPropagation();
+            $(this).find('ul').toggle();
+        });
+        $('.create-server').find('li').on('click', function() {
+            $('.main').find('.tablebox').eq(4).show().siblings().hide();
+        })
+
+        $(document).not($('.create-server')).on('click', function(e) {
+            e.stopPropagation();
+            $('.create-server').find('ul').hide();
+        })
+        $('.close').on('click', function() {
+            $(this).parents('.tablebox').hide();
+        })
+        </script>
+</body>
+
+</html>

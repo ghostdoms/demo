@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新建hive表-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/create.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li class="on"><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="monitoring_statistics.html">监控统计</a></li>
+                <li class="on">
+                    <a href="data_source.html">数据管理</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="data_source.html">数据源管理</a></li>
+                            <li><a href="table.html">数据仓库管理</a></li>
+                            <li><a href="create_hive.html">新建数据表</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="task_manager.html">任务配置</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="task_manager.html">任务管理</a></li>
+                            <li><a href="task_new.html">新建任务</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">新建数据表</a></li>
+            </ul>
+        </nav>
+        <section class="create-section">
+            <form class="form-new">
+                <h4>添加表名和备注</h4>
+                <label for="" class="clearfix"><span>数据仓库表名：</span>
+                    <input type="text" placeholder="必填">
+                </label>
+                <label for="" class="clearfix"><span>表备注：</span>
+                    <input type="text" placeholder="必填">
+                </label>
+                <label for="" class="clearfix">
+                    <span>已选：</span>
+                    <i><em>机械臂数据网关</em><em>＞数据库2</em></i>
+                    <i><em>机械臂数据网关</em><em>＞数据库2</em></i>
+                    <i><em>机械臂数据网关</em><em>＞数据库2</em></i>
+                    <b class="new-table error settab">生成标记表格</b>
+                </label>
+                <label for="" class="clearfix">
+                    <span>选择数据来源：</span>
+                    <div class="one">
+                        <ul class="fir">
+                            <li class="iscont-r">
+                                电商数据网关
+                            </li>
+                            <ul class="sec">
+                                <li class="on">bihuoke</li>
+                                <li>undp</li>
+                                <li>数据库3 </li>
+                            </ul>
+                            <li>机械臂数据网关</li>
+                            <li class="iscont-d">机器维修数据服务器
+                            </li>
+                            <ul class="sec">
+                                <li>数据库1</li>
+                            </ul>
+                            <li>数据服务器2</li>
+                        </ul>
+                    </div>
+                    <div class="two">
+                        <h5>选择来源数据表</h5>
+                        <ul>
+                            <li class="on">bihuoke-name</li>
+                            <li>bihuoke-uuid</li>
+                            <li>bihuoke-dd </li>
+                        </ul>
+                    </div>
+                    <div class="three">
+                        <div class="file-box"><span>选择meta</span><i><input  type="file" name="" onchange="handleFiles(this.files)"></i></div>
+                        <div class="file-box"><span>选择Sample</span><i><input type="file" name="" onchange="handle(this.files)"></i><b class="set">设置解析规则</b></div>
+                    </div>
+                </label>
+            </form>
+            <div class="create-box">
+                <div class="content">
+                    <form class="create-hive">
+                        <!--  <div class="input-box">
+                           <span>选择要导入的文件：</span>
+                           <div class="file-big">
+                               <div class="file-box">
+                                   <i>导入meta</i>
+                                   <input type="file" name="" onchange="handleFiles(this.files)">
+                                   <div class="settab">确定并生成标记表格</div>
+                               </div>
+                               <div class="file-box">
+                                   <i>导入Sample</i>
+                                   <input type="file" name="" onchange="handle(this.files)">
+                                   <div class="set">设置解析规则</div>
+                               </div>
+                           </div>
+                       </div> -->
+                        <div class="input-box tab">
+                            <div class="tab-box">
+                            </div>
+                        </div>
+                        <div class="btn-box box-bottom">
+                            <input type="submit" class="hive-btn" name="" value="完成">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--mark-->
+        <div class="mark">
+            <div class="iscancel">
+                <div>
+                    <span class="true trues">去新建任务</span>
+                    <span class="true cancels">继续新建表</span>
+                    <span class="cancel cancels">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+        <!--mark end-->
+        <!--mark set-->
+        <div class="mark-set">
+            <div class="set-box">
+                <h3>导入Sample</h3>
+                <div class="content">
+                    <ul class="secend">
+                        <li>
+                            <span>选择分隔符</span>
+                            <div class="f-r">
+                                <em class="active">
+                                    <i></i>Tab键
+                                </em>
+                                <em>
+                                    <i></i>分号
+                                </em>
+                                <em>
+                                    <i></i>逗号
+                                </em>
+                                <em>
+                                    <i></i>空格
+                                </em>
+                            </div>
+                        </li>
+                        <li>
+                            <span>原始数据预览</span>
+                            <div class="f-r preview">
+                                <pre><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em></pre>
+                                <pre><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em><em>1,2,3</em></pre>
+                            </div>
+                            <div class="btn-box">
+                                <input type="button" class="false" name="" value="取消">
+                                <input type="button" class="next" name="" value="下一步">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="third">
+                        <li>
+                            <span>生成数据预览</span>
+                            <div class="f-r preview">
+                                <kbd>123123123</kbd>
+                                <kbd>123123123</kbd>
+                                <kbd>123123123</kbd>
+                                <kbd>123123123</kbd>
+                                <kbd>123123123</kbd>
+                            </div>
+                            <div class="btn-box">
+                                <input type="button" class="false" name="" value="取消">
+                                <input type="button" class="prev" name="" value="上一步">
+                                <input type="button" class="next" name="" value="完成">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+    </div>
+    <div class="warning">
+        请选择要导入的文件
+    </div>
+    <!--mark set end-->
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/create.js"></script>
+</body>
+
+</html>

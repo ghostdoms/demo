@@ -1,0 +1,215 @@
+.main-title a{
+    float: right;
+    margin-right: 30px; 
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+    background: #3da1ce;
+    line-height: 25px;
+    margin-top: 6px;
+    padding: 0 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+.main-title a em{
+    font-weight: bolder;
+    font-size: 14px;
+    margin-right: 12px;
+}
+.main table.database tr td:nth-child(3){
+    text-align: center;
+}
+.main table.database th:nth-child(3){
+    width: 30%;
+}
+.main table.task th:first-child,
+.main table.task th:last-child{
+    width: 15%;
+}
+.main table.task th:nth-child(2),
+.main table.task th:nth-child(3){
+    width: 10%;
+}
+.main table.task th:nth-child(5){
+    width: 13%;
+}
+.main table.task td{
+    text-align: center;
+}
+.main table.task td:nth-child(1),
+.main table.task td:nth-child(4){
+    text-align: left;
+}
+
+.main table span{
+    display: inline-block;
+    background: #e1f1f7;
+    color: #3da1ce;
+    border: solid 1px #e1e1e1;
+    line-height: 30px;
+    cursor: pointer;
+}
+.main table.database tr td:nth-child(2){
+    color: #3f90b6;
+    outline: none;
+}
+.main table.database tr td:nth-child(2) span{
+    background: none;
+    border: none;
+}
+.main table span.set{
+    width: 80px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.main table span.star{
+    border-radius: 3px 0 0 3px;
+    padding: 0 10px;
+    border-right: none;
+}
+.main table span.delete{
+    border-radius: 0 3px 3px 0;
+    padding: 0 10px;
+}
+.main table.tesk-detail{
+    width: 70%;
+}
+.main table.tesk-detail tbody tr:nth-child(odd){
+    background: #fff;
+}
+.main table.tesk-detail tbody tr:nth-child(even){
+    background: #fafafa;
+}
+.main table.tesk-detail tbody td{
+    color: #444;
+}
+.main table.tesk-detail tbody td:nth-child(1){
+    width: 135px;
+}
+
+.select-box{
+    margin-bottom: 19px;
+}
+.select-box label{
+    display: inline-block;
+    margin-right: 30px;
+}
+.select-box label .select{
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    padding: 5px 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+.select-box label .select:after{
+    content: '';
+    border: solid 4px transparent;
+    border-top: solid 8px #c9c9c9;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    margin-left: 30px;
+}
+.select-box label .select .option{
+    width: 102%;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    margin-left: -1px;
+    margin-right: -1px;
+    display: none;
+}
+.select-box label .select .option li{
+    line-height: 27px;
+    text-indent: 15px;
+}
+.select-box label .select .option li:hover{
+    background: #edf7fc;
+}
+
+/*mark*/
+
+.mark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mark .iscancel {
+    padding: 56px 35px 31px 35px;
+    background: #fff;
+    width: 310px;
+    text-align: center;
+    margin: 350px auto;
+    position: relative;
+}
+
+
+/*true or false*/
+
+.mark .iscancel .close {
+    position: absolute;
+    display: block;
+    font-style: normal;
+    width: 16px;
+    height: 16px;
+    color: #7d7d7d;
+    font-size: 28px;
+    right: 8px;
+    top: 8px;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    background: #f9f9f9;
+    color: #666;
+}
+
+.mark .iscancel div span {
+    display: inline-block;
+    height: 30px;
+    width: 92px;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    line-height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.mark .iscancel p{
+    margin: 0 0 27px 0;
+    font-size: 24px;
+    color: #666;
+}
+.mark .iscancel div span.trues {
+    background: #00a3e7;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.mark .iscancel div span.cancels {
+    background: #f9f9f9;
+    color: #666;
+    border: 1px solid #c1d0e3;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

@@ -1,0 +1,247 @@
+html,
+body {
+    background: #fff;
+}
+
+.content {
+    padding: 0 60px;
+}
+
+.content>span {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background: #f4f4f4;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    padding: 0 24px;
+    margin: 20px 0;
+}
+
+.content form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content form label>span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    width: 72px;
+    text-align: right;
+    font-size: 14px;
+    color: #444;
+}
+
+.content form label i {
+    font-style: normal;
+    font-size: 14px;
+    color: #999;
+    margin-left: 15px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+.content form label input[type=text],
+.content form label input[type=email] {
+    height: 30px;
+    width: 396px;
+    border: 1px solid #e1e1e1;
+    padding-left: 10px;
+    outline: none;
+    font-size: 14px;
+    color: #999;
+}
+
+.content form label b {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-weight: normal;
+    padding: 0 10px;
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #666;
+}
+
+.content form label.choo span {
+    float: left;
+}
+
+.content form label.choo>div {
+    float: left;
+    width: 396px;
+}
+
+.content form label.choo>div>span {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+    text-indent: 10px;
+    border: 1px solid #e1e1e1;
+    position: relative;
+}
+
+.content form label.choo>div>span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 10px;
+    top: 10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #c9c9c9;
+}
+
+.content form label.choo .choo_user {
+    width: 398px;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px #e5e5e5;
+    -webkit-box-shadow: 0 2px 2px #e5e5e5;
+}
+
+.content form label.choo .choo_user ul {
+    width: 100%;
+    border: 1px solid #e1e1e1;
+}
+
+.content form label.choo .choo_user li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #666;
+}
+
+.content form label.choo .choo_user li i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #d9d9d9;
+    top: 2px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content form label.choo .choo_user li i.on:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    left: 2px;
+    top: 2px;
+    border-left: 2px solid #00a3e7;
+    border-bottom: 2px solid #00a3e7;
+    transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.content form label.choo .choo_user li:hover {
+    background: #edf7fc;
+}
+
+.content form label.choo .choo_user div {
+    width: 398px;
+    height: 42px;
+    line-height: 42px;
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    padding-right: 10px;
+}
+
+.content form label.choo .choo_user div span {
+    display: inline-block;
+    width: 60px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.content form label.choo .choo_user div span.true {
+    background: #3f98c2;
+    color: #fff;
+}
+
+.content form label.choo .choo_user div span.cancel {
+    background: #f4f4f4;
+    color: #999;
+    margin-left: 10px;
+}
+
+.content form>div {
+    width: 471px;
+    height: 30px;
+    margin-top: 100px;
+}
+
+.content form>div input,
+.content form>div span {
+    display: inline-block;
+    background: #3f98c2;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: none;
+    outline: none;
+    float: right;
+    margin-left: 10px;
+}
+
+.content form label em {
+    font-size: 14px;
+    color: #444;
+    margin-left: 74px;
+}
+
+.content form label input[type=radio] {
+    opacity: 0;
+}
+
+.content form label label {
+    display: inline-block;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #e1f1f7;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 10px;
+    top:12px;
+}
+
+.content form label input[type=radio]:checked + label:after {
+	content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 3px;
+    top: 3px;
+    background: #3da1ce;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.content form label .yy,
+.content form label .nn{
+	text-align: left;
+	width: 30px;
+}

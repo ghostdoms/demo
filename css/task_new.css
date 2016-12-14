@@ -1,0 +1,413 @@
+html,
+body {
+    height: 100%;
+    background: #fff;
+}
+
+.new-task {
+    padding: 20px 61px 0 61px;
+}
+
+
+/* label-box */
+
+.label-box {
+    margin-bottom: 14px;
+}
+
+.parent-box>span,
+.label-box label>span {
+    display: inline-block;
+    color: #333;
+    font-size: 14px;
+    width: 70px;
+    text-align: right;
+}
+
+.label-box label input {
+    width: 403px;
+    line-height: 30px;
+    border: solid 1px #e1e1e1;
+    outline: none;
+    text-indent: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+
+/*parent-box*/
+
+.parent-box {
+    margin: 20px 0;
+}
+
+.parent-box>span {
+    float: left;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.parent-box .r-box {
+    overflow: hidden;
+}
+
+
+/*r-box*/
+
+.r-box .choose-text p {
+    display: inline-block;
+    background: #f2f2f2;
+    line-height: 30px;
+    padding: 0 8px;
+    margin-right: 16px;
+}
+
+.r-box .choose-text p span {
+    font-size: 14px;
+    color: #333;
+}
+
+.r-box .choose-text p i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-left: solid 1px #333;
+    border-top: solid 1px #333;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    position: relative;
+    top: -2px;
+}
+
+
+/*task-button*/
+
+.task-button {
+    margin: 19px 0;
+}
+
+.task-button a {
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 7px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: solid 1px #e1e1e1;
+    font-size: 14px;
+    color: #444;
+    line-height: 1;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+}
+
+.task-button a:hover {
+    background: #3da1ce;
+    border: solid 1px transparent;
+    color: #fff;
+}
+
+
+/*one*/
+
+.one {
+    width: 280px;
+    height: 370px;
+    border: 1px solid #e2e0e0;
+    float: left;
+    overflow: scroll;
+}
+
+.one li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+
+.one .fir>li {
+    padding-left: 45px;
+}
+
+.one .fir>li.iscont-r:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left: 8px solid #999;
+    left: 20px;
+    top: 10px;
+}
+
+.one .fir>li.iscont-d:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 8px solid #999;
+    left: 20px;
+    top: 10px;
+}
+
+.one .fir>li.iscont-d:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 8px solid #999;
+    left: 20px;
+    top: 10px;
+}
+
+.one .sec>li {
+    padding-left: 76px;
+}
+
+.one .sec>li.on {
+    background: #e3f0f5;
+    color: #238fc6;
+    font-size: 14px;
+}
+
+.one .thi>li {
+    padding-left: 94px;
+}
+
+.yl-title {
+    margin: 20px 0;
+}
+
+.yl-title span {
+    display: inline-block;
+    font-size: 14px;
+    color: #656666;
+    font-weight: bolder;
+    background: #f4f4f4;
+    padding: 0 24px;
+    line-height: 30px;
+}
+
+
+/*ylrw*/
+
+.ylrw {
+    margin-top: 14px;
+}
+
+.ylrw>span {
+    float: left;
+    position: relative;
+    top: 2px;
+    font-size: 14px;
+}
+
+.ylrw .select {
+    display: inline-block;
+    width: 403px;
+    position: relative;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    padding: 0 15px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    font-size: 14px;
+    float: left;
+}
+
+.ylrw .select:after {
+    content: '';
+    border: solid 4px transparent;
+    border-top: solid 8px #c9c9c9;
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+.ylrw .select .option {
+    width: 403px;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    background: #fff;
+    border: solid 1px #e1e1e1;
+    margin-left: -1px;
+    margin-right: -1px;
+    z-index: 1;
+    display: none;
+}
+
+.ylrw .select + p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.ylrw .select +.create {
+    display: inline-block;
+    background: #f4f4f4;
+    color: #3da1ce;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 0 11px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.ylrw .select +.create:hover {
+    background: #3da1ce;
+    color: #fff;
+}
+
+.ylrw .select .option li {
+    line-height: 27px;
+    text-indent: 15px;
+}
+
+.ylrw .select .option li:hover {
+    background: #edf7fc;
+}
+
+.ylrw .select1 .option {
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+}
+
+.ylrw .select1 {
+    width: 348px;
+}
+
+.ylrw .select1 .option {
+    width: 348px;
+}
+
+.ylrw .select1 .option li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    border-right: solid 1px #e1e1e1;
+    border-bottom: solid 1px #e1e1e1;
+}
+
+.button-box {
+    width: 475px;
+    margin: 160px 0;
+    text-align: right;
+}
+
+.button-box input {
+    outline: none;
+    border: none;
+    background: #3da1ce;
+    line-height: 30px;
+    padding: 0 34px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+}
+
+
+/*wrap*/
+
+.mark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.mark .iscancel {
+    padding: 56px 35px 31px 35px;
+    background: #fff;
+    width: 310px;
+    text-align: center;
+    margin: 350px auto;
+    position: relative;
+}
+
+
+/*true or false*/
+
+.mark .iscancel .close {
+    position: absolute;
+    display: block;
+    font-style: normal;
+    width: 16px;
+    height: 16px;
+    color: #7d7d7d;
+    font-size: 28px;
+    right: 8px;
+    top: 8px;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    background: #f9f9f9;
+    color: #666;
+}
+
+.mark .iscancel div span {
+    display: block;
+    height: 30px;
+    width: 40%;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    line-height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.mark .iscancel div span.trues {
+    background: #00a3e7;
+    color: #fff;
+}
+
+.mark .iscancel div span.cancels {
+    background: #f9f9f9;
+    color: #666;
+    border: 1px solid #c1d0e3;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

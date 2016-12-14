@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>监控统计详情-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/monitoring_statistics_det.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li class="on"><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="on nodown"><a href="monitoring_statistics.html">监控统计</a></li>
+                <li>
+                    <a href="data_source.html">数据管理</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="data_source.html">数据源管理</a></li>
+                            <li><a href="table.html">数据仓库管理</a></li>
+                            <li><a href="create_hive.html">新建数据表</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="task_manager.html">任务配置</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="task_manager.html">任务管理</a></li>
+                            <li><a href="task_new.html">新建任务</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li><a href="javascript:;">任务列表</a></li>
+            </ul>
+        </nav>
+        <section class="pagetwo">
+            <div class="show">
+                <div class="title clearfix">
+                    <div class="select status clearfix">
+                        <span>状态：</span>
+                        <span class="alert">
+                            <span status="all">ACTIVE</span>
+                        <div class="showbox">
+                            <ul>
+                                <li status="running">ACTIVE</li>
+                                <li status="stopped">PAUSED</li>
+                                <li>REMOVED</li>
+                            </ul>
+                        </div>
+                        </span>
+                    </div>
+                    <div class="select work clearfix">
+                        <span>工作空间：</span>
+                        <span class="workdom">
+                            <span>全部</span>
+                        <div>
+                            <ul>
+                            </ul>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+                <table border="1" class="tablebox">
+                    <thead>
+                        <tr>
+                            <th>项目名</th>
+                            <th>任务名</th>
+                            <th>任务状态</th>
+                            <th>日志路径</th>
+                            <th>最近执行时间</th>
+                            <th>执行时长（小时）</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                            <td>---</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <div class="mark">
+            <div class="iscancel">
+                <h2>确定消除报警？</h2>
+                <div>
+                    <span class="true">确定</span>
+                    <span class="cancel">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+        <div class="log">
+            <div class="logshow">
+                <div class="close">×</div>
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="pagebox">
+            <ul>
+                <li class="prev">
+                    <</li>
+                        <li class="num on">1</li>
+                        <li class="num">2</li>
+                        <li class="num">3</li>
+                        <li class="num">4</li>
+                        <li class="num">5</li>
+                        <li class="next">></li>
+                        <li class="total">共<span>9999</span>页</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/monitoring_statistics.js"></script>
+</body>
+
+</html>

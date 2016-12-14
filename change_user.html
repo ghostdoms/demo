@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>修改用户-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add_user.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li class="on"><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="on no-down"><a href="permission.html">用户列表</a></li>
+                <li class="no-down"><a href="part_list.html">角色列表</a></li>
+                <li class="no-down"><a href="operate_log.html">操作日志</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <span>修改用户信息</span>
+            <form action="">
+                <label for="">
+                    <span>姓名：</span>
+                    <input type="text">
+                </label>
+                <label for="">
+                    <span>已有角色：</span>
+                    <b>五矿-数据分析师</b>
+                </label>
+                <label for="" class="choo clearfix">
+                    <span>选择角色：</span>
+                    <div>
+                        <span>选择角色</span>
+                        <div class="choo_user">
+                            <ul>
+                                <li><i class="on"></i>五矿-数据分析师</li>
+                                <li><i></i>管理员</li>
+                                <li><i></i>数据分析师</li>
+                            </ul>
+                            <div>
+                                <span class="cancel">取消</span>  
+                                <span class="true">确定</span>
+                            </div>
+                        </div>
+                    </div>
+                    <i>可多选</i>
+                </label>
+                <label for="">
+                    <span>邮箱：</span>
+                    <input type="email" disabled>
+                    <i>不可修改</i>
+                </label>
+                <label for="">
+                    <span>手机：</span>
+                    <input type="text" placeholder="选填">
+                </label>
+
+                <label for="">
+                    <em>是否重新生成新密码</em>
+                    <input type="radio" name="isreset" id="y" class="y">
+                    <label for="y"></label> 
+                    <span class="yy">是</span>   
+
+                    <input type="radio" name="isreset" id="n" class="n">
+                    <label for="n"></label> 
+                    <span class="nn">否</span>
+                </label>
+                <div>
+                    <span>退出</span>
+                    <input type="submit" value="保存">
+                </div>
+            </form>
+        </section>
+        
+    </div>
+</body>
+
+</html>

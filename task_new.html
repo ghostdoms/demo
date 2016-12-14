@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>新建任务-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/task_new.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li class="on"><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="monitoring_statistics.html">监控统计</a></li>
+                <li class="dropdown">
+                    <a href="data_source.html">数据管理</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="data_source.html">数据源管理</a></li>
+                            <li><a href="table.html">数据仓库管理</a></li>
+                            <li><a href="create_hive.html">新建数据表</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown on">
+                    <a href="task_manager.html">任务配置</a>
+                    <div class="taskbox">
+                        <ul>
+                            <li><a href="task_manager.html">任务管理</a></li>
+                            <li><a href="task_new.html">新建任务</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">新建任务</a></li>
+            </ul>
+        </nav>
+        <section class="new-task">
+            <div class="label-box">
+                <label>
+                    <span>任务名：</span>
+                    <input type="text" placeholder="必填">
+                </label>
+            </div>
+            <div class="label-box">
+                <label>
+                    <span>任务备注：</span>
+                    <input type="text" placeholder="必填">
+                </label>
+            </div class="label-box">
+            <div class="parent-box clearfix">
+                <span>已选：</span>
+                <div class="r-box">
+                    <div class="choose-text">
+                        <p>
+                            <span>工作空间1</span>
+                            <i></i>
+                            <span>数据路2</span>
+                            <i></i>
+                            <span>表1</span>
+                        </p>
+                        <p>
+                            归属任务空间：
+                            <span>工作空间1</span>
+                            <i></i>
+                            <span>数据路2</span>
+                        </p>
+                    </div>
+                    <div class="task-button">
+                        <a href="">关联Hive表</a>
+                        <a href="">新建Hive表</a>
+                    </div>
+                    <div class="one">
+                        <ul class="fir">
+                            <li class="iscont-r">
+                                电商数据网关
+                            </li>
+                            <ul class="sec">
+                                <li class="on">bihuoke</li>
+                                <ul class="thi">
+                                    <li>dada</li>
+                                    <li>dada</li>
+                                    <li>dada</li>
+                                    <li>dada</li>
+                                </ul>
+                                <li>undp</li>
+                                <li>数据库3 </li>
+                            </ul>
+                            <li>机械臂数据网关</li>
+                            <li class="iscont-d">机器维修数据服务器
+                            </li>
+                            <ul class="sec">
+                                <li>数据库1</li>
+                            </ul>
+                            <li>数据服务器2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="select-box">
+                <div class="yl-title">
+                    <span>设置依赖关系</span>
+                </div>
+                <div class="ylrw clearfix">
+                    <span>依赖任务：</span>
+                    <div class="select">
+                        <span></span>
+                        <div class="option">
+                            <ul>
+                                <li>归集任务1</li>
+                                <li>归集任务2</li>
+                                <li>无</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ylrw clearfix">
+                    <span>依赖条件：</span>
+                    <div class="select">
+                        <span></span>
+                        <div class="option">
+                            <ul>
+                                <li>依赖的任务完成后开始执行</li>
+                                <li>依赖的任务成功执行后开始执行</li>
+                                <li>无</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="create">添加新的依赖任务</div>
+                </div>
+            </div>
+            <div class="select-box">
+                <div class="yl-title">
+                    <span>设置运行时长阈值</span>
+                </div>
+                <div class="ylrw set-time clearfix">
+                    <span>运行时长报警阈值：</span>
+                    <div class="select select1">
+                        <span></span>
+                        <div class="option">
+                            <ul class="clearfix">
+                                <li>1小时</li>
+                                <li>2小时</li>
+                                <li>5小时</li>
+                                <li>10小时</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>超过则报警</p>
+                </div>
+                <div class="ylrw clearfix">
+                    <span>运行时长停止阈值：</span>
+                    <div class="select select1">
+                        <span></span>
+                        <div class="option">
+                            <ul class="clearfix">
+                                <li>1小时</li>
+                                <li>2小时</li>
+                                <li>5小时</li>
+                                <li>10小时</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>超过则停止</p>
+                </div>
+            </div>
+            <div class="button-box">
+                <input type="button" value="完&nbsp;成">
+            </div>
+        </section>
+        <!--mark-->
+        <div class="mark">
+            <div class="iscancel">
+                <div>
+                    <span class="true trues">去新建任务</span>
+                    <span class="true cancels">继续新建表</span>
+                    <span class="cancel cancels">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+        <!--mark end-->
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript">
+        /*select*/
+        $('.select').on('click', function(e) {
+            e.stopPropagation();
+            $(this).find('.option').toggle().find('li').on('click', function(e) {
+                e.stopPropagation();
+                $(this).parents('.option').hide().prev().text($(this).text());
+            });
+            $(this).siblings().find('.option').hide();
+        })
+
+        $(document).not($('.select')).on('click', function(e) {
+            e.stopPropagation();
+            $('.option').hide();
+        });
+
+        $('input[type=button]').on('click', function() {
+            if (window.scrollY > 0) {
+                $('.mark').css('top', 0);
+                $('.log').css('top', 0);
+            } else {
+                $('.mark').css('top', $('header').height() + $('.one-title').height() + 'px');
+                $('.log').css('top', $('header').height() + $('.one-title').height() + 'px');
+            }
+            $('.mark').show();
+        })
+        </script>
+</body>
+
+</html>

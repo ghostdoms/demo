@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="loginhead clearfix">
+            <h3><img src="images/logo.png" alt="">MeshExpert</h3>
+        </header>
+        <section>
+            <div class="img"><img src="images/banner_login_bg.png" alt=""></div>
+            <form class="form login-form">
+                <div>
+                    <label for="" class="user"></label>
+                    <input type="text" placeholder="用户名">
+                </div>
+                <div>
+                    <label for="" class="psd"></label>
+                    <input type="password" placeholder="密码">
+                </div>
+                <div>
+                    <input type="submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;录">
+                </div>
+            </form>
+        </section>
+        <div class="changepsd">
+            <h4>第一次登录时必须修改密码<span class="close">×</span></h4>
+            <form class="changebox">
+                <div>
+                    <label for="" class="newpsd">新密码：
+                        <input type="password">
+                    </label>
+                </div>
+                <div>
+                    <label for="" class="ispsd">确认新密码：
+                        <input type="password">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="确认并登录">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/lib/jquery.js"></script>
+    <script type="text/javascript">
+    //登录用户状态检测
+    if (localStorage.getItem('user_info')) {
+        if (location.href.indexOf('logout') >= 0) {
+            localStorage.removeItem('user_info');
+        } else {
+            location.href = "index.html";
+        }
+    };
+
+    //登录
+    $('.login-form').on('submit', function() {
+        var user = $('.user').next().val();
+        var psd = $('.psd').next().val();
+        //判断是第一次登录
+        if (user == 'hadoop' && psd == 'hadoop') { //不是第一次登陆
+            var user_data = {
+                'user': user,
+                'psd': psd
+            };
+            var user_loacl_data = JSON.stringify(user_data);
+            localStorage.setItem('user_info', user_loacl_data);
+            console.log(user_data);
+            location.href = "index.html";
+        } else if (user == 'hadoop' && psd == 'hadoopss') { //第一次登陆
+            $('.changepsd').show();
+        } else { //密码错误
+
+        };
+        return false;
+    });
+    //更改新密码
+    $('.changebox').on('submit', function() {
+            var user = $('.user').next().val();
+            var newpsd = $('.changebox input').val();
+            var ispsd = $('.changebox input').val();
+            if (newpsd == ispsd && /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,16}$/.test(newpsd)) {
+                var user_data = {
+                    'user': user,
+                    'psd': ispsd
+                };
+                var user_loacl_data = JSON.stringify(user_data);
+                localStorage.setItem('user_info', user_loacl_data);
+                $('.changepsd').hide();
+                location.href = "index.html";
+            } else {
+                alert('error');
+            };
+            return false;
+        });
+        //关闭更改密码
+    $('.close').on('click', function() {
+        $('.changepsd').hide();
+    })
+    </script>
+</body>
+
+</html>

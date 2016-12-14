@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>系统监控-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resource.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li class="on"><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="machine.html">机器管理</a></li>
+                <li class="no-down on"><a href="system.html">系统监控</a></li>
+            </ul>
+        </nav>
+        <nav class="two-title">
+            <ul class="clearfix">
+                <li class="on"><a href="javascript:;">系统监控</a></li>
+            </ul>
+        </nav>
+        <section class="machine">
+            <div class="sketch">
+            	<h4>概述</h4>
+            	<table cellpadding="0" border="0" cellspacing="0">
+            		<thead>
+            			<tr>
+            				<th>角色</th>
+            				<th>机器数</th>
+            				<th>总任务数</th>
+            				<th>总CPU数</th>
+            				<th>状态</th>
+            			</tr>
+            		</thead>
+            		<tbody>
+            			<tr>
+            				<td>上传器</td>
+            				<td>30</td>
+            				<td>3306</td>
+            				<td>20</td>
+            				<td>
+            					<span class="success">正常(<em>29</em>)</span>
+            					<span class="warning">报警(<em>29</em>)</span>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>上传器</td>
+            				<td>30</td>
+            				<td>3306</td>
+            				<td>20</td>
+            				<td>
+            					<span class="success">正常(<em>29</em>)</span>
+            					<span class="warning">报警(<em>29</em>)</span>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>上传器</td>
+            				<td>30</td>
+            				<td>3306</td>
+            				<td>20</td>
+            				<td>
+            					<span class="success">正常(<em>29</em>)</span>
+            					<span class="warning">报警(<em>29</em>)</span>
+            				</td>
+            			</tr>
+            			<tr>
+            				<td>上传器</td>
+            				<td>30</td>
+            				<td>3306</td>
+            				<td>20</td>
+            				<td>
+            					<span class="success">正常(<em>29</em>)</span>
+            					<span class="warning">报警(<em>29</em>)</span>
+            				</td>
+            			</tr>
+            		</tbody>
+            	</table>
+            </div>
+            <div class="detail">
+            	<h4>详情</h4>
+            	<table cellpadding="0" border="0" cellspacing="0">
+            		<thead>
+            			<tr>
+            				<th>名称</th>
+            				<th>角色</th>
+            				<th>IP地址</th>
+            				<th>运行任务数</th>
+            				<th>资源占用情况</th>
+            				<th>上传心跳</th>
+            			</tr>
+            		</thead>
+            		<tbody>
+            			<tr>
+            				<td>upload1</td>
+            				<td>上传器</td>
+            				<td>24.15.532</td>
+            				<td>
+            					<span class="todetail">20</span>
+            				</td>
+            				<td>CPU：80%，内存：4.5/8GB, 硬盘：400GB/2TB</td>
+            				<td>正常（最近汇报6-7 18：09：11）</td>
+            			</tr>
+            			<tr>
+            				<td>upload1</td>
+            				<td>上传器</td>
+            				<td>24.15.532</td>
+            				<td>
+            					<span class="todetail">20</span>
+            				</td>
+            				<td>CPU：80%，内存：4.5/8GB, 硬盘：400GB/2TB</td>
+            				<td>正常（最近汇报6-7 18：09：11）</td>
+            			</tr>
+            			<tr>
+            				<td>upload1</td>
+            				<td>上传器</td>
+            				<td>24.15.532</td>
+            				<td>
+            					<span class="todetail">20</span>
+            				</td>
+            				<td>CPU：80%，内存：4.5/8GB, 硬盘：400GB/2TB</td>
+            				<td>正常（最近汇报6-7 18：09：11）</td>
+            			</tr>
+            			<tr>
+            				<td>upload1</td>
+            				<td>上传器</td>
+            				<td>24.15.532</td>
+            				<td>
+            					<span class="todetail">20</span>
+            				</td>
+            				<td>CPU：80%，内存：4.5/8GB, 硬盘：400GB/2TB</td>
+            				<td>正常（最近汇报6-7 18：09：11）</td>
+            			</tr>
+            		</tbody>
+            	</table>
+            </div>
+        </section>
+        <div class="mark">
+            <div class="warning-box">
+            	<div class="warning-title clearfix">
+            		<h3>报警</h3>
+            		<div class="close">×</div>
+            	</div>
+            	<div class="warning-content">
+            		<table border="0" cellpadding="0" cellspacing="0">
+            			<thead>
+            				<tr>
+            					<th>主机</th>
+            					<th>问题</th>
+            					<th>历时</th>
+            				</tr>
+            			</thead>
+            			<tbody>
+            				<tr>
+            					<td>master</td>
+            					<td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+            					<td>25d 24h 34m 拷贝</td>
+            				</tr>
+            				<tr>
+            					<td>master</td>
+            					<td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+            					<td>25d 24h 34m 拷贝</td>
+            				</tr>
+            				<tr>
+            					<td>master</td>
+            					<td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+            					<td>25d 24h 34m 拷贝</td>
+            				</tr>
+            				<tr>
+            					<td>master</td>
+            					<td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+            					<td>25d 24h 34m 拷贝</td>
+            				</tr>
+            			</tbody>
+            		</table>
+            	</div>
+            </div>
+            <div class="detail-box">
+            	<div class="detail-title clearfix">
+            		<h3>报警</h3>
+            		<div class="close">×</div>
+            	</div>
+            	<div class="detail-content">
+            		<table border="0" cellpadding="0" cellspacing="0">
+            			<thead>
+            				<tr>
+            					<th>任务名</th>
+            					<th>任务类型</th>
+            					<th>状态</th>
+            					<th>依赖关系</th>
+            					<th>运行时间</th>
+            				</tr>
+            			</thead>
+            			<tbody>
+            				<tr>
+            					<td>master</td>
+            					<td>上传</td>
+            					<td>在执行</td>
+            					<td>归集任务1</td>
+            					<td>每天8:00执行，24小时执行一次</td>
+            				</tr>
+            			</tbody>
+            		</table>
+            	</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!--<script type="text/javascript" src="js/table.js"></script> -->
+        <script>
+        	$('.todetail').on('click', function(){
+        		$('.mark,.detail-box').show();
+        		$('.warning-box').hide();
+        	})
+
+        	$('.warning').on('click', function(){
+        		$('.mark,.warning-box').show();
+        		$('.detail-box').hide();
+        	})
+        </script>
+</body>
+
+</html>

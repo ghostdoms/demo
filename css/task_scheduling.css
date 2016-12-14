@@ -1,0 +1,286 @@
+html,
+body {
+    background: #fff;
+}
+
+.wrap .content {
+    width: 100%;
+}
+
+.wrap .content .conf {
+    padding: 0 12px;
+    margin: 20px 60px;
+    display: inline-block;
+    background: #f4f4f4;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #656666;
+}
+
+.wrap .content .date_def {
+    padding: 0 60px;
+}
+
+.date_def label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.date_def label span {
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    margin-right: 14px;
+    float: left;
+}
+
+.date_def label input[type=text] {
+    height: 30px;
+    border: 1px solid #e1e1e1;
+    width: 363px;
+    outline: none;
+    padding-left: 14px;
+    float: left;
+    font-size: 14px;
+    color: #999;
+}
+
+.date_def label b {
+    display: block;
+    font-weight: normal;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    float: left;
+    background: url('../images/date.png') no-repeat center;
+}
+
+.week,
+.month {
+    padding: 0 28px;
+}
+
+.week>label,
+.month>label {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #e1f1f7;
+    position: relative;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-right: 3px;
+}
+
+.week input[type=radio],
+.month input[type=radio] {
+    opacity: 0;
+}
+
+.week input[type=radio]:checked + label:after,
+.month input[type=radio]:checked + label:after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    left: 3px;
+    top: 3px;
+    background: #3da1ce;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.week>span,
+.month>span {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background: #f4f4f4;
+    font-size: 14px;
+    color: #656666;
+    margin: 20px 0;
+}
+
+.week ul,
+.month ul {
+    padding: 0 38px;
+    width: 600px;
+}
+
+.week ul li,
+.month ul li {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    margin-right: 20px;
+}
+
+.month ul li {
+    margin-right: 32px;
+    margin-bottom: 5px;
+}
+
+.week ul li span,
+.month ul li span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #d9d9d9;
+    top: 2px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.week ul li span.on:after,
+.month ul li span.on:after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 4px;
+    left: 2px;
+    top: 2px;
+    border-left: 2px solid #00a3e7;
+    border-bottom: 2px solid #00a3e7;
+    transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.starttime {
+    padding: 0 60px;
+    margin-top: 30px;
+}
+
+.starttime span:first-child {
+    font-size: 14px;
+    color: #333;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.starttime input {
+    height: 30px;
+    width: 218px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    padding-left: 14px;
+    font-size: 14px;
+    color: #333;
+    margin: 0 20px 0 5px;
+}
+
+.starttime span:last-child {
+    display: inline-block;
+    font-size: 14px;
+    color: #3da1ce;
+    background: #f4f4f4;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.starttime span:last-child:hover {
+    background: #3da1ce;
+    color: #fff;
+}
+
+.endbox {
+    width: 100%;
+    padding: 0 60px;
+}
+
+.endbox .end {
+    display: inline-block;
+    height: 30px;
+    width: 102px;
+    background: #3da1ce;
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 375px;
+    margin-top: 161px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+}
+
+.wrap .mark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.wrap .mark .iscancel {
+    padding: 56px 35px 31px 35px;
+    background: #fff;
+    width: 310px;
+    text-align: center;
+    margin: 350px auto;
+    text-align: center;
+    position: relative;
+}
+
+
+/*true or false*/
+
+.wrap .mark .iscancel .close {
+    position: absolute;
+    display: block;
+    font-style: normal;
+    width: 16px;
+    height: 16px;
+    color: #7d7d7d;
+    font-size: 28px;
+    right: 8px;
+    top: 8px;
+    text-align: center;
+    line-height: 16px;
+    cursor: pointer;
+    background: #f9f9f9;
+    color: #666;
+}
+
+.wrap .mark .iscancel div span {
+    display: block;
+    height: 30px;
+    width: 40%;
+    line-height: 30px;
+    font-size: 14px;
+    margin: 0 auto;
+    line-height: 30px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.wrap .mark .iscancel div span.trues {
+    background: #00a3e7;
+    color: #fff;
+}
+
+.wrap .mark .iscancel div span.cancels {
+    background: #f9f9f9;
+    color: #666;
+    border: 1px solid #c1d0e3;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}

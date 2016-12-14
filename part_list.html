@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>角色列表-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/permission.css">
+    <link rel="stylesheet" href="css/part_list.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li><a href="machine.html">资源管理</a></li>
+                <li class="on"><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down"><a href="permission.html">用户列表</a></li>
+                <li class="on no-down"><a href="part_list.html">角色列表</a></li>
+                <li class="no-down"><a href="operate_log.html">操作日志</a></li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="searchbox clearfix">
+                <form class="search">
+                    <label for="">
+                        <input type="text" placeholder="角色名/创建人">
+                        <input type="submit" value="">
+                    </label>
+                </form>
+                <a href="add_part.html"><span><i>+</i>添加新角色</span></a>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>角色</th>
+                        <th>创建人</th>
+                        <th>创建时间</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>五矿北京分公司-数据分析师</td>
+                        <td>李某</td>
+                        <td>2016-9-20 22:10</td>
+                        <td>
+                            <span class="change">修改</span>
+                            <span class="del">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>五矿-数据分析师</td>
+                        <td>李某</td>
+                        <td>2016-9-20 22:10</td>
+                        <td>
+                            <span class="change">修改</span>
+                            <span class="del">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>五矿-数据分析师</td>
+                        <td>李某</td>
+                        <td>2016-9-20 22:10</td>
+                        <td>
+                            <span class="change">修改</span>
+                            <span class="del">删除</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>五矿北京分公司-数据分析师</td>
+                        <td>李某</td>
+                        <td>2016-9-20 22:10</td>
+                        <td>
+                            <span class="change">修改</span>
+                            <span class="del">删除</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div class="mark">
+            <div class="show">
+                <h4>确定删除任务？</h4>
+                <div class="clearfix">
+                    <span class="true">确定</span>
+                    <span class="cancel">取消</span>
+                </div>
+                <div class="close">×</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加机器-MeshExpert</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resource.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="clearfix">
+            <h3><a href="index.html"><img src="images/logo.png" alt="">MeshExpert</a></h3>
+            <nav>
+                <li><a href="monitoring_statistics.html">数据归集</a></li>
+                <li><a href="http://192.168.2.40">数据分析</a></li>
+                <li class="on"><a href="machine.html">资源管理</a></li>
+                <li><a href="permission.html">权限管理</a></li>
+            </nav>
+            <div class="userbox clearfix">
+                <span>
+                    <b class="use-b">
+                        用户名：<em class="user">---</em>
+                        <div class="index-option">
+                            <ul>
+                                <li><a href="changepsd.html">个人信息</a></li>
+                                <li><a class="logout">退出</a></li>
+                            </ul>
+                        </div>
+                    </b>
+                </span>
+            </div>
+        </header>
+        <nav class="one-title">
+            <ul class="clearfix">
+                <li class="no-down on"><a href="machine.html">机器管理</a></li>
+                <li class="no-down"><a href="system.html">系统监控</a></li>
+            </ul>
+        </nav>
+        <section class="machine">
+            <div class="add">
+                <h4>添加</h4>
+                <div class="add-content">
+                    <form action="">
+                        <div class="input-box">
+                            <label>
+                                <span>名称：</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label>
+                                <span>IP地址：</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <label>
+                                <span>端口：</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div class="input-box">
+                            <span>角色：</span>
+                            <div class="select">
+                                <span></span>
+                                <div class="option">
+                                    <ul>
+                                        <li>上传器</li>
+                                        <li>归集器</li>
+                                        <li>导入器</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <input type="submit" class="submit" value="注&nbsp;册">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="mark">
+            <div class="warning-box">
+                <div class="warning-title clearfix">
+                    <h3>报警</h3>
+                    <div class="close">×</div>
+                </div>
+                <div class="warning-content">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>主机</th>
+                                <th>问题</th>
+                                <th>历时</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>master</td>
+                                <td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+                                <td>25d 24h 34m 拷贝</td>
+                            </tr>
+                            <tr>
+                                <td>master</td>
+                                <td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+                                <td>25d 24h 34m 拷贝</td>
+                            </tr>
+                            <tr>
+                                <td>master</td>
+                                <td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+                                <td>25d 24h 34m 拷贝</td>
+                            </tr>
+                            <tr>
+                                <td>master</td>
+                                <td>LACK OF FREE SWEEP SPACE OF MASTER</td>
+                                <td>25d 24h 34m 拷贝</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="detail-title clearfix">
+                    <h3>报警</h3>
+                    <div class="close">×</div>
+                </div>
+                <div class="detail-content">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>任务名</th>
+                                <th>任务类型</th>
+                                <th>状态</th>
+                                <th>依赖关系</th>
+                                <th>运行时间</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>master</td>
+                                <td>上传</td>
+                                <td>在执行</td>
+                                <td>归集任务1</td>
+                                <td>每天8:00执行，24小时执行一次</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/lib/jquery.js"></script>
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+        <!--<script type="text/javascript" src="js/table.js"></script> -->
+        <script>
+        $('.todetail').on('click', function() {
+            $('.mark,.detail-box').show();
+            $('.warning-box').hide();
+        })
+
+        $('.warning').on('click', function() {
+            $('.mark,.warning-box').show();
+            $('.detail-box').hide();
+        });
+
+        $('.select').on('click', function(e) {
+            e.stopPropagation();
+            $(this).find('.option').toggle().find('li').on('click', function(e) {
+                e.stopPropagation();
+                $(this).parents('.option').hide().prev().text($(this).text());
+            });
+            $(this).siblings().find('.option').hide();
+        })
+
+        $(document).not($('.select')).on('click', function(e) {
+            e.stopPropagation();
+            $('.option').hide();
+        });
+        </script>
+</body>
+
+</html>

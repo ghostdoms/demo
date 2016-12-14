@@ -1,0 +1,221 @@
+html,body{
+	background: #fff;
+}
+.content{
+	padding: 0 60px;
+}
+.searchbox{
+	height: 30px;
+	margin: 20px 0;
+}
+.searchbox .search{
+	width: 60%;
+	float: left;
+}
+.searchbox .search input[type=text]{
+	width: 325px;
+	height: 28px;
+	border: 1px solid #e1e1e1;
+	outline: none;
+	padding-left: 10px;
+	font-size: 14px;
+	color:#999899;
+}
+.searchbox .search input[type=submit]{
+	width: 36px;
+	height: 28px;
+	border: 1px solid #e1e1e1;
+	border-left: none;
+	margin-left: -4px;
+	outline: none;
+	background: url('../images/search.png') no-repeat center;
+	background-color: #f4f4f4;
+}
+.searchbox span{
+	display: inline-block;
+	float: right;
+	height: 30px;
+	padding: 0 10px;
+	color: #fff;
+	font-size: 12px;
+	background: #3ca0cd;
+	line-height: 22px;
+	cursor: pointer;
+}
+.searchbox span i{
+	font-style: normal;
+	color: #fff;
+	margin-right: 5px;
+	font-size: 24px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+}
+.search label:nth-child(2){
+	display: inline-block;
+	margin-left: 48px;
+}
+.search em{
+	display: inline-block;
+	line-height: 30px;
+	font-size: 14px;
+	color: #444;
+}
+.search .select{
+	display: inline-block;
+	position: relative;
+	background: #fff;
+	border: solid 1px #e1e1e1;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	padding: 0 15px;
+}
+.search .select:after{
+	content: '';
+    display: inline-block;
+    border: solid 5px transparent;
+    border-top: solid 8px #c9c9c9;
+    margin-left: 20px;
+    position: relative;
+    top: 3px;
+}
+.search .select .option{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 0;
+	background: #fff;
+	display: none;
+}
+.search .select .option ul{
+	border: solid 1px #e1e1e1;
+	margin-left: -1px;
+	margin-right: -1px
+}
+.search .select .option li{
+	padding: 0 15px;
+	line-height: 30px;
+	color: #333;
+	font-size: 14px;
+}
+.search .select .option li:hover{
+	background: #eef6fb;
+}
+.content .table{
+	width: 100%;
+}
+.content .table tr th,
+.content .table tr td{
+	height: 40px;
+	color: #444;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+.content .table tbody tr:nth-child(odd){
+	background: #fafafa;      
+}
+.content .table tr td:last-child span{
+	display: inline-block;
+	height: 28px;
+	background: #e1f1f7;
+	color: #3da1ce;
+	line-height: 28px;
+	padding: 0 17px;
+	font-size: 12px;
+	border: 1px solid #e2e1e0;
+	cursor: pointer;
+}
+.content .table tr td:last-child span.change{
+	border-radius: 3px 0 0 3px;
+	border-right-color: transparent;
+}
+.content .table tr td:last-child span.del{
+	margin-left: -6px;
+	border-radius: 0 3px 3px 0;
+}
+.wrap .mark{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+.wrap .mark .show{
+	width: 340px;
+	height: 172px;
+	background: #fff;
+	margin: 70px auto;
+	text-align: center;
+	padding-top: 45px;
+	position: relative;
+}
+.wrap .mark .show h4{
+	margin: 0 0 25px 0;
+	font-size: 24px;
+	color: #666;
+	font-weight: normal;
+}
+.wrap .mark .show span{
+	display: inline-block;
+	float: left;
+	width: 92px;
+	height: 30px;
+	background: #3da1ce;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 3px;
+}
+.wrap .mark .show span.true{
+	float: left;
+	margin-left: 38px;
+}
+.wrap .mark .show span.cancel{
+	float: right;
+	margin-right: 38px;
+}
+.wrap .mark .show .close{
+	position: absolute;
+	right: 10px;
+	top: -4px;
+	font-size: 32px;
+	color: #888;
+	cursor: pointer;
+}
+
+/*logs css*/
+.log-tab tr td:nth-child(1){
+	padding: 0 8px;
+}
+.log-tab tr td:nth-child(2),
+.log-tab tr td:nth-child(4){
+	text-align: left;
+	padding: 0 20px; 
+}
+
+.pager{
+	text-align: center;
+	margin-top: 300px;
+}
+.pager ul{
+	display: inline-block;
+}
+.pager ul li{
+	float: left;
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 14px;
+	color: #666;
+}
+.pager ul li.on{
+	color: #3da0cd;
+}
+.pager ul li a{
+	color:#666;
+}
